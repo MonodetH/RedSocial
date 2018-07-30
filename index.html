@@ -7,15 +7,23 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Hello World!</h1>
-
   <input type="text" id="mensaje">
-<button id="publicar">Publicar</button>
-<div id="publicacion"></div>
+  <button id="publicar">Publicar</button>
+  <div id="publicacion"></div>
 
-
-
-
-<script src="./src/js/feed.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAbZyvss3ycvdzOhHPS0Cx-NxwIW3LTYpo",
+        authDomain: "redsocial-5e645.firebaseapp.com",
+        databaseURL: "https://redsocial-5e645.firebaseio.com",
+        projectId: "redsocial-5e645",
+        storageBucket: "",
+        messagingSenderId: "152047893290"
+      };
+      firebase.initializeApp(config);
+    </script>
+  <script src="./src/js/feed.js"></script>
 </body>
 </html>
